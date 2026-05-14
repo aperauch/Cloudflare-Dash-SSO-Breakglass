@@ -101,19 +101,27 @@ Different options require different API token permissions. A single token can co
 
 Create an API token at: **Cloudflare Dashboard > My Profile > API Tokens > Create Token**
 
-## Configuration
+## Configuration (Required Before First Use)
 
-The following values are hardcoded near the top of the script and must match your Cloudflare account:
+Before running the script, you **must** edit the configuration section near the top of `Add-BackupIdP.ps1` and replace the placeholder values with your own:
 
-| Variable | Value | Description |
-|----------|-------|-------------|
-| `$AccountId` | `5baed515fc52bac5d62bdccccfcd84cb` | Cloudflare account ID |
-| `$SsoAppId` | `b2a4543e-fa67-4efd-872b-238c05f2a63b` | Access application ID for the SSO App |
+```powershell
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+$AccountId = "<your-cloudflare-account-id>"
+$SsoAppId  = "<your-sso-app-id>"
+```
 
-To find these values:
+| Variable | Description |
+|----------|-------------|
+| `$AccountId` | Your Cloudflare account ID |
+| `$SsoAppId` | The Access application ID for your SSO App |
 
-- **Account ID** — visible in the Cloudflare dashboard URL: `https://dash.cloudflare.com/<account-id>`
-- **SSO App ID** — navigate to **Zero Trust > Access > Applications**, select the SSO App, and copy the Application ID from the URL or Basic Information section.
+**How to find these values:**
+
+- **Account ID** — visible in the Cloudflare dashboard URL: `https://dash.cloudflare.com/<account-id>`, or on the **Account Home** overview page under **Account ID**.
+- **SSO App ID** — navigate to **Zero Trust > Access > Applications**, select the **SSO App**, and copy the Application ID from the URL or the **Basic Information** section.
 
 ## WhatIf / Dry Run
 
