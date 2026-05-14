@@ -48,8 +48,8 @@ $ErrorActionPreference = "Stop"
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-$AccountId = "INSERT CLOUDFLARE ACCOUNT ID HERE"
-$SsoAppId  = "INSERT CLOUDFLARE ZERO TRUST DASH SSO APP ID HERE"
+$AccountId = "<your-cloudflare-account-id>"    # Replace with your Cloudflare account ID
+$SsoAppId  = "<your-sso-app-id>"              # Replace with your SSO App application ID
 $BaseUrl   = "https://api.cloudflare.com/client/v4"
 
 # ---------------------------------------------------------------------------
