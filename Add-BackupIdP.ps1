@@ -48,8 +48,8 @@ $ErrorActionPreference = "Stop"
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-$AccountId = "5baed515fc52bac5d62bdccccfcd84cb"
-$SsoAppId  = "b2a4543e-fa67-4efd-872b-238c05f2a63b"
+$AccountId = "INSERT CLOUDFLARE ACCOUNT ID HERE"
+$SsoAppId  = "INSERT CLOUDFLARE ZERO TRUST DASH SSO APP ID HERE"
 $BaseUrl   = "https://api.cloudflare.com/client/v4"
 
 # ---------------------------------------------------------------------------
